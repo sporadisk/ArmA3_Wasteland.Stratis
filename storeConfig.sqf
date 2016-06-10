@@ -298,6 +298,7 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
+	["Bowman Elite II-Cap", "Bowman_cap", 25, "hat"],
 	["Modular Helmet (Digi)", "H_HelmetIA", 50, "hat"],
 	// ["MICH (Camo)", "H_HelmetIA_net", 50, "hat"],
 	// ["MICH 2 (Camo)", "H_HelmetIA_camo", 50, "hat"],
@@ -417,6 +418,16 @@ headArray = compileFinal str
 
 uniformArray = compileFinal str
 [
+	["Female Full Uniform (AAF)", "I_FEM_AAF_long", 200, "uni"],
+	["Female Rolled Sleeves (AAF)", "B_FEM_AAF_Rolled", 200, "uni"],
+	["Female Uniform w/shirt (AAF)", "I_FEM_AAF", 200, "uni"],
+	["Female Full Uniform (CSAT)", "O_FEM_CSAT_Long", 200, "uni"],
+	["Female Rolled Sleeves (CSAT)", "O_FEM_CSAT_Rolled", 200, "uni"],
+	["Female Uniform w/shirt (CSAT)", "O_FEM_CSAT", 200, "uni"],
+	["Female Guerilla Clothing", "B_FEM_FIA", 200, "uni"],
+	["Female Full Uniform (NATO)", "B_FEM_NATO_Collar", 200, "uni"],
+	["Female Rolled Sleeves (NATO)", "B_FEM_NATO_Rolled", 200, "uni"],
+	["Female Uniform w/shirt (NATO)", "B_FEM_NATO", 200, "uni"],
 	["Light Ghillie (NATO)", "U_B_GhillieSuit", 200, "uni"],
 	["Light Ghillie (CSAT)", "U_O_GhillieSuit", 200, "uni"],
 	["Light Ghillie (AAF)", "U_I_GhillieSuit", 200, "uni"],
@@ -472,6 +483,7 @@ uniformArray = compileFinal str
 	["Guerilla Smocks", "U_IG_Guerilla3_1", 25, "uni"],
 	["Guerilla Apparel", "U_IG_Guerrilla_6_1", 25, "uni"],
 	["Guerilla Uniform", "U_IG_leader", 25, "uni"],
+	["Hunting Clothes", "U_C_HunterBody_grn", 25, "uni"],
 	/*["Worker Coveralls", "U_C_WorkerCoveralls", 25, "uni"], // can only be worn by civilian units
 	["T-Shirt (Blue)", "U_C_Poor_1", 25, "uni"],
 	["Polo (Red/white)", "U_C_Poloshirt_redwhite", 25, "uni"],
@@ -588,7 +600,11 @@ genItemArray = compileFinal str
 	["Toolkit", "ToolKit", 150, "item"],
 	["Mine Detector", "MineDetector", 100, "item"],
 	["NV Goggles", "NVGoggles", 100, "nvg"],
+	["Cyber-ninja Goggles", "AJ_Mask_Tan", 200, "nvg"],
 	["Diving Goggles", "G_Diving", 100, "gogg"],
+	["Black Balaclava", "Balaclava_Blk_Plain", 100, "gogg"],
+	["Novelty Balaclava: Tongue", "Balaclava_Blk_humour", 110, "gogg"],
+	["Novelty Balaclava: Shark", "Balaclava_Blk_Warthog", 110, "gogg"],
 	["Binoculars", "Binocular", 50, "binoc"],
 	["Rangefinder", "Rangefinder", 150, "binoc"],
 	["Laser Designator (NATO)", "Laserdesignator", 250, "binoc", "WEST"],
