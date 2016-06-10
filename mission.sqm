@@ -68,20 +68,6 @@ addons[]=
 	"A3_Structures_F_EPC_Civ_Accessories"
 };
 
-class AddonsMetaData
-{
-	class List
-	{
-		items=10;
-
-		class Item1
-		{
-			className="FEMAL3_CustomModels";
-			name="FEMAL3_CustomModels";
-		};
-	};
-};
-
 randomSeed=40661;
 class Mission
 {
