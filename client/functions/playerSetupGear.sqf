@@ -59,6 +59,10 @@ switch (true) do
 	{
 		_player addWeapon "Rangefinder";
 	};
+	case (["FEM_AAF", typeOf _player] call fn_findString != -1):
+	{
+		_player addWeapon "Rangefinder";
+	};
 };
 
 if (_player == player) then

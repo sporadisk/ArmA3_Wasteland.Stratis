@@ -26,6 +26,7 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F_BLUFOR",
+	"FEMAL3_CustomModels",
 	"a3_characters_f",
 	"A3_Characters_F_OPFOR",
 	"A3_Characters_F_INDEP",
@@ -66,6 +67,21 @@ addons[]=
 	"A3_Structures_F_Households_House_Big01",
 	"A3_Structures_F_EPC_Civ_Accessories"
 };
+
+class AddonsMetaData
+{
+	class List
+	{
+		items=10;
+
+		class Item1
+		{
+			className="FEMAL3_CustomModels";
+			name="FEMAL3_CustomModels";
+		};
+	};
+};
+
 randomSeed=40661;
 class Mission
 {
@@ -1934,7 +1950,31 @@ class Mission
 						isPlayable=1;
 					};
 					id=124;
-					type="I_engineer_F";
+					type="FEM_AAF_Rolled_C_F";
+
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Tyler";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
