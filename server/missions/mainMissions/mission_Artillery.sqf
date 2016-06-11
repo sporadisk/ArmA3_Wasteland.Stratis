@@ -1,0 +1,30 @@
+// ******************************************************************************************
+// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
+// ******************************************************************************************
+//	@file Version: 1.0
+//	@file Name: mission_Artillery.sqf
+//	@file Author: Sporadisk, [404] Deadbeat, [404] Costlyy, AgentRev
+//	@file Created: 08/12/2012 15:19
+
+if (!isServer) exitwith {};
+#include "mainMissionDefines.sqf";
+
+private ["_vehicleClass", "_nbUnits"];
+
+_setupVars =
+{
+	_vehicleClass =
+	[
+		"B_MBT_01_arty_F", // Scorcher
+		"B_MBT_01_mlrs_F", // Sandstorm
+		"O_MBT_02_arty_F"  // 2S9 Sochor
+	] call BIS_fnc_selectRandom;
+
+	_missionType = "Mobile Artillery Vehicle";
+
+	_locationsArray = MissionSpawnMarkers;
+
+	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
+};
+
+_this call mission_VehicleCapture;
