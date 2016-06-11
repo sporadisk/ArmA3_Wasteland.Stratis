@@ -14,6 +14,7 @@ MainMissions =
 	["mission_Convoy", 1],
 	["mission_HostileHeliFormation", 0.5],
 	["mission_APC", 1],
+	["mission_Artillery", 0.5],
 	["mission_MBT", 1],
 	["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
@@ -36,7 +37,8 @@ MoneyMissions =
 [
 	["mission_MoneyShipment", 1],
 	["mission_SunkenTreasure", 1],
-	["mission_altisPatrol", 1]
+	["mission_altisPatrol", 1],
+	["mission_militaryPatrol", 1]
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
