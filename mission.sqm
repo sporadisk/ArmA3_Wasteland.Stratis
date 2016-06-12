@@ -1989,7 +1989,31 @@ class Mission
 						isPlayable=1;
 					};
 					id=126;
-					type="I_medic_F";
+					type="FEM_AAF_Rolled_C_F";
+
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Tyler";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -2004,7 +2028,31 @@ class Mission
 						isPlayable=1;
 					};
 					id=127;
-					type="I_diver_F";
+					type="FEM_AAF_Rolled_C_F";
+
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Tyler";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item2
 				{
@@ -2019,7 +2067,31 @@ class Mission
 						isPlayable=1;
 					};
 					id=128;
-					type="I_medic_F";
+					type="FEM_AAF_Rolled_C_F";
+
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Tyler";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item3
 				{
@@ -2034,7 +2106,31 @@ class Mission
 						isPlayable=1;
 					};
 					id=129;
-					type="I_engineer_F";
+					type="FEM_AAF_Rolled_C_F";
+
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Tyler";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
