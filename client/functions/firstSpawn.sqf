@@ -74,7 +74,7 @@ player addEventHandler ["WeaponAssembled",
 		};
 
 		{
-			[_x, ["AI","",""]] remoteExec ["A3W_fnc_setName"]; 
+			[_x, ["UAV","",""]] remoteExec ["A3W_fnc_setName", 0, _x]; 
 		} forEach crew _obj;
 	};
 }];
@@ -192,6 +192,10 @@ if (["A3W_combatAbortDelay", 0] call getPublicVar > 0) then
 		};
 	}];
 };
+
+// Reset fast anim speed set in fn_inGameUIActionEvent.sqf
+player addEventHandler ["GetInMan", { player setAnimSpeedCoef 1 }];
+player addEventHandler ["GetOutMan", { player setAnimSpeedCoef 1 }];
 
 _uid = getPlayerUID player;
 

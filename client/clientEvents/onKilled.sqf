@@ -14,6 +14,7 @@ _killer = _player getVariable "FAR_killerPrimeSuspect";
 if (isNil "_killer" && !isNil "FAR_findKiller") then { _killer = _player call FAR_findKiller };
 if (isNil "_killer" || {isNull _killer}) then { _killer = _presumedKiller };
 
+_killer = effectiveCommander _killer;
 _deathCause = _player getVariable ["A3W_deathCause_local", []];
 
 if (_killer == _player) then
@@ -27,25 +28,17 @@ if (_killer == _player) then
 	_killer = objNull;
 };
 
-[_player, _killer, _presumedKiller, _deathCause] spawn
-{
-	if (isServer) then
-	{
-		_this call server_PlayerDied;
-	}
-	else
-	{
-		PlayerCDeath = _this;
-		publicVariableServer "PlayerCDeath";
-	};
-};
+[_player, _killer, _presumedKiller, _deathCause] remoteExecCall ["A3W_fnc_serverPlayerDied", 2];
+[0, _player, _killer, [_killer, _player] call A3W_fnc_isFriendly] call A3W_fnc_deathMessage;
 
 if (_player == player) then
 {
 	(findDisplay 2001) closeDisplay 0; // Close Gunstore
 	(findDisplay 2009) closeDisplay 0; // Close Genstore
 	(findDisplay 5285) closeDisplay 0; // Close Vehstore
+	(findDisplay 63211) closeDisplay 0; // Close ATM
 	uiNamespace setVariable ["BIS_fnc_guiMessage_status", false]; // close message boxes
+	closeDialog 0;
 
 	// Load scoreboard in render scope
 	["A3W_scoreboard", "onEachFrame",

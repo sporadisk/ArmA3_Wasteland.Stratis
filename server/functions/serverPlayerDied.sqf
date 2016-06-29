@@ -10,10 +10,10 @@ if (!isServer) exitWith {};
 
 params [["_unit",objNull,[objNull]], "", "", ["_deathCause",[],[[]]]]; // _unit, _killer, _presumedKiller, _deathCause
 
-if (alive _unit) exitWith {};
-
 _unit setVariable ["processedDeath", diag_tickTime];
 _unit setVariable ["A3W_deathCause_local", _deathCause];
+
+private _killer = (_this select [0,3]) call A3W_fnc_registerKillScore;
 
 // Remove player save on death
 if (isPlayer _unit && {["A3W_playerSaving"] call isConfigOn}) then
@@ -21,7 +21,6 @@ if (isPlayer _unit && {["A3W_playerSaving"] call isConfigOn}) then
 	(getPlayerUID _unit) call fn_deletePlayerSave;
 };
 
-private _killer = (_this select [0,3]) call A3W_fnc_registerKillScore;
 private _backpack = unitBackpack _unit;
 
 if (!isNull _backpack) then
@@ -38,9 +37,8 @@ if (vehicle _unit != _unit) then
 	}
 	else
 	{
-		pvar_ejectCorpse = _unit;
-		(owner _unit) publicVariableClient "pvar_ejectCorpse";
+		_unit remoteExec ["fn_ejectCorpse", _unit];
 	};
 };
 
-if !(["G_Diving", goggles _unit] call fn_startsWith) then { removeGoggles _unit };
+//if !(["G_Diving", goggles _unit] call fn_startsWith) then { removeGoggles _unit };
