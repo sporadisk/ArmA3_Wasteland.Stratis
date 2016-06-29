@@ -6,6 +6,8 @@
 //	@file Author: [GoT] JoSchaap, [404] Del1te, AgentRev
 //	@file Created: 13/02/2014 22:52
 
+// Route: Northwest coast to The Spartan
+
 // starting positions for this route
 _starts =
 [

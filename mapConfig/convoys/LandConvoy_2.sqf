@@ -3,8 +3,10 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: LandConvoy_2.sqf
-//	@file Author: Sporadisk, [GoT] JoSchaap, [404] Del1te, AgentRev
+//	@file Author: [GoT] JoSchaap, [404] Del1te, AgentRev, Sporadisk
 //	@file Created: 13/02/2014 22:52
+
+// Route: The Spartan to Limeri Bay
 
 // starting positions for this route
 _starts =
