@@ -28,12 +28,12 @@ _setupVars =
 			25000, // Money
 			[
 				[ // NATO convoy
-					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
-					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"] // Veh 2
+					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F", "CUP_I_SUV_Armored_ION", "CUP_I_LR_MG_AAF", "CUP_C_Datsun"], // Veh 1
+					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F", "CUP_I_SUV_Armored_ION", "CUP_I_LR_MG_AAF", "CUP_C_Datsun"] // Veh 2
 				],
 				[ // CSAT convoy
-					["O_MRAP_02_hmg_F", "O_MRAP_02_gmg_F"], // Veh 1
-					["O_MRAP_02_hmg_F", "O_MRAP_02_gmg_F"] // Veh 2
+					["O_MRAP_02_hmg_F", "O_MRAP_02_gmg_F", "CUP_O_UAZ_SPG9_CHDKZ", "CUP_O_UAZ_SPG9_RU", "CUP_O_UAZ_METIS_RU"], // Veh 1
+					["O_MRAP_02_hmg_F", "O_MRAP_02_gmg_F", "CUP_O_UAZ_SPG9_CHDKZ", "CUP_O_UAZ_SPG9_RU", "CUP_O_UAZ_METIS_RU"] // Veh 2
 				],
 				[ // AAF convoy
 					["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"], // Veh 1

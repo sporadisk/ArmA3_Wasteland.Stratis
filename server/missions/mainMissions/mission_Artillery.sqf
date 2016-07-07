@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: mission_Artillery.sqf
-//	@file Author: Sporadisk, [404] Deadbeat, [404] Costlyy, AgentRev
+//	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev, Sporadisk
 //	@file Created: 08/12/2012 15:19
 
 if (!isServer) exitwith {};
@@ -17,7 +17,8 @@ _setupVars =
 	[
 		"B_MBT_01_arty_F", // Scorcher
 		"B_MBT_01_mlrs_F", // Sandstorm
-		"O_MBT_02_arty_F"  // 2S9 Sochor
+		"O_MBT_02_arty_F", // 2S9 Sochor
+		"CUP_O_BM21_RU"    // BM-21 GRAD
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "Mobile Artillery Vehicle";
