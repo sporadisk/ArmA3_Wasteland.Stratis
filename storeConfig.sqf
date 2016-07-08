@@ -769,6 +769,12 @@ landArray = compileFinal str
 
 armoredArray = compileFinal str
 [
+	["GAZ Vodnik (2x PKM LMG)", "CUP_O_GAZ_Vodnik_PK_RU", 15000, "vehicle"],
+	["GAZ Vodnik (GMG + LMG)", "CUP_O_GAZ_Vodnik_AGS_RU", 17500, "vehicle"],
+	["GAZ Vodnik (30mm)", "CUP_O_GAZ_Vodnik_BPPU_RU", 23000, "vehicle"],
+	["Humvee M2 Browning", "CUP_B_HMMWV_M2_GPK_ACR", 16000, "vehicle"],
+	["Humvee DSHKM", "CUP_B_HMMWV_M2_GPK_ACR", 16000, "vehicle"],
+	["Humvee GMG", "CUP_B_HMMWV_M2_GPK_ACR", 17500, "vehicle"],
 	["Hunter", "B_MRAP_01_F", 4000, "vehicle"],
 	["Hunter HMG", "B_MRAP_01_hmg_F", 15000, "vehicle"],
 	["Hunter GMG", "B_MRAP_01_gmg_F", 17500, "vehicle"],
@@ -789,6 +795,8 @@ tanksArray = compileFinal str
 	["CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F", 32500, "vehicle"],
 	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 35000, "vehicle"],
 	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 37500, "vehicle"],
+	["BMP-3", "CUP_O_BMP3_RU", 37500, "vehicle"],
+	["T-34-85-M", "CUP_I_T34_NAPA", 37500, "vehicle"],
 	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 40000, "vehicle"],
 	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 40000, "vehicle"],
 	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 40000, "vehicle"],

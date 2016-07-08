@@ -6,6 +6,7 @@
 R3F_LOG_CFG_remorqueurs =
 [
 	"Boat_Armed_01_base_F",
+	"CUP_HMMWV_Base",
 	"CUP_LR_Base",
 	"CUP_SUV_Base",
 	"CUP_UAZ_Base",
@@ -161,6 +162,7 @@ R3F_LOG_CFG_transporteurs =
 	["LSV_01_base_F", 15],
 	["LSV_02_base_F", 15],
 	["Boat_Armed_01_base_F", 20],
+	["CUP_HMMWV_Base", 20],
 	["CUP_SUV_Base", 20],
 	["Heli_Attack_02_base_F", 20],
 	["Heli_Light_02_base_F", 20],
@@ -171,6 +173,7 @@ R3F_LOG_CFG_transporteurs =
 	["Offroad_02_base_F", 20],
 	["SUV_01_base_F", 20],
 	["Heli_Transport_01_base_F", 25],
+	["CUP_GAZ_Vodnik_Base", 30],
 	["Heli_Transport_02_base_F", 30],
 	["Heli_Transport_03_base_F", 30],
 	["Heli_Transport_04_base_F", 30],

@@ -67,14 +67,19 @@ addons[]=
 	"A3_Structures_F_Wrecks",
 	"A3_Weapons_F",
 	"CUP_Creatures_Military_Chedaki",
+	"CUP_Creatures_Military_NAPA",
 	"CUP_Creatures_Military_Russia",
 	"CUP_Creatures_Military_USMC",
 	"CUP_Creatures_People_Military_DummyInfantrySet",
+	"CUP_TrackedVehicles_BMP3",
+	"CUP_TrackedVehicles_T34",
 	"CUP_Wheeled_SUV",
 	"CUP_WheeledVehicles_Datsun",
+	"CUP_WheeledVehicles_HMMWV",
 	"CUP_WheeledVehicles_LR",
 	"CUP_WheeledVehicles_UAZ",
 	"CUP_WheeledVehicles_Ural",
+	"CUP_WheeledVehicles_Vodnik",
 	"FEMAL3_CustomModels"
 };
 
