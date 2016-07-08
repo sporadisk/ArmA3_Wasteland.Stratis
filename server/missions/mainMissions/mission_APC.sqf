@@ -22,7 +22,8 @@ _setupVars =
 		"O_APC_Tracked_02_cannon_F",
 		"I_APC_tracked_03_cannon_F",
 		"B_APC_Tracked_01_AA_F",
-		"O_APC_Tracked_02_AA_F"
+		"O_APC_Tracked_02_AA_F",
+		"CUP_O_BMP3_RU"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = switch (true) do
