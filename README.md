@@ -12,9 +12,7 @@ A version of [A3Wasteland](https://github.com/A3Wasteland/ArmA3_Wasteland.Strati
 * [CBA_A3](http://steamcommunity.com/workshop/filedetails/?id=450814997)
 
 ### Warning
-This fork will probably be a disaster if used on a public server.
-
-Public-server issues like balance and griefing have not been taken into consideration :)
+Public-server issues like balance and griefing have not been taken into consideration during the development of this branch.
 
 # Original readme.md from Team Wasteland
 A3Wasteland is a survival-like combat sandbox, which incorporates elements of team deathmatch and sector control in one big fun-to-play package. Similar to DayZ, the objectives are to scavenge weapons and vehicles, team up with fellow players, and engage in combat to obtain control of the landscape. Best experienced with 50 or more players. 
