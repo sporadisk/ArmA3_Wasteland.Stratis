@@ -1,6 +1,6 @@
 # A3Wasteland Stratis (Sporadisk fork)
 ### Fork-description
-A version of A3Wasteland tuned towards private-server sandbox-style gameplay.
+A version of [A3Wasteland](https://github.com/A3Wasteland/ArmA3_Wasteland.Stratis) tuned towards private-server sandbox-style gameplay.
 
 ### Mods in use
 * [Zee Identity Pack](http://www.armaholic.com/page.php?id=26169)
