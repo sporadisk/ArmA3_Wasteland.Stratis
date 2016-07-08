@@ -3,16 +3,17 @@
 A version of A3Wasteland tuned towards private-server sandbox-style gameplay.
 
 ### Mods in use
-[Zee Identity Pack](http://www.armaholic.com/page.php?id=26169)
-[FEMAL3 Heads](https://steamcommunity.com/sharedfiles/filedetails/?id=374775446)
-[FEMAL3 Uniforms](https://steamcommunity.com/sharedfiles/filedetails/?id=374780664)
-[CUP Units](http://steamcommunity.com/workshop/filedetails/?id=497661914)
-[CUP Vehicles](http://steamcommunity.com/workshop/filedetails/?id=541888371)
-[CUP Weapons](http://steamcommunity.com/workshop/filedetails/?id=497660133)
-[CBA_A3](http://steamcommunity.com/workshop/filedetails/?id=450814997)
+* [Zee Identity Pack](http://www.armaholic.com/page.php?id=26169)
+* [FEMAL3 Heads](https://steamcommunity.com/sharedfiles/filedetails/?id=374775446)
+* [FEMAL3 Uniforms](https://steamcommunity.com/sharedfiles/filedetails/?id=374780664)
+* [CUP Units](http://steamcommunity.com/workshop/filedetails/?id=497661914)
+* [CUP Vehicles](http://steamcommunity.com/workshop/filedetails/?id=541888371)
+* [CUP Weapons](http://steamcommunity.com/workshop/filedetails/?id=497660133)
+* [CBA_A3](http://steamcommunity.com/workshop/filedetails/?id=450814997)
 
 ### Warning
 This fork will probably be a disaster if used on a public server.
+
 Public-server issues like balance and griefing have not been taken into consideration :)
 
 # Original readme.md from Team Wasteland
