@@ -23,7 +23,7 @@ _setupObjects =
 	_convoyVeh = ["I_MRAP_03_hmg_F","I_MBT_03_cannon_F","O_APC_Tracked_02_AA_F", "I_MBT_03_cannon_F",
 		"I_MRAP_03_gmg_F", "CUP_O_BMP3_RU", "CUP_I_T34_NAPA", "CUP_I_SUV_Armored_ION",
 		"CUP_O_GAZ_Vodnik_BPPU_RU", "CUP_B_HMMWV_DSHKM_GPK_ACR", "CUP_O_GAZ_Vodnik_PK_RU", "CUP_I_LR_MG_AAF",
-		"CUP_O_UAZ_SPG9_CHDKZ", "CUP_O_UAZ_METIS_RU"];
+		"CUP_O_UAZ_SPG9_CHDKZ", "CUP_O_UAZ_METIS_RU", "CUP_O_GAZ_Vodnik_AGS_RU"];
 	
 	_veh1 = _convoyVeh call BIS_fnc_selectRandom;
 	_veh2 = _convoyVeh call BIS_fnc_selectRandom;
