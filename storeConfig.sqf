@@ -727,7 +727,7 @@ landArray = compileFinal str
 	["Offroad HMG", "B_G_Offroad_01_armed_F", 2500, "vehicle"],
 	["Land Rover HMG", "CUP_I_LR_MG_AAF", 2500, "vehicle"],
 	["UAZ (SPG-9)", "CUP_O_UAZ_SPG9_CHDKZ", 3500, "vehicle"],
-	["UAZ (9K115 Metis)", "CUP_O_UAZ_SPG9_RU", 4000, "vehicle"],
+	["UAZ (9K115 Metis)", "CUP_O_UAZ_METIS_RU", 4000, "vehicle"],
 
 	["Truck", "C_Van_01_transport_F", 700, "vehicle"],
 	["Truck (Camo)", "B_G_Van_01_transport_F", 800, "vehicle"],
