@@ -28,7 +28,8 @@ civilianVehicles =
 	"C_Offroad_01_F",
 	"I_G_Offroad_01_F",
 	"C_Van_01_box_F",
-	"C_Van_01_transport_F"
+	"C_Van_01_transport_F",
+	"CUP_C_Datsun"
 ];
 
 //Light Military Vehicle List - Random Spawns
