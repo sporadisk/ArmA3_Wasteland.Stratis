@@ -130,18 +130,18 @@ staticGunsArray = compileFinal str
 	["Mk30 HMG .50 Low tripod", "B_HMG_01_F", 2000],
 	["Mk30 HMG .50 Low tripod", "O_HMG_01_F", 2000],
 	["Mk30 HMG .50 Low tripod", "I_HMG_01_F", 2000],
-	// ["Mk30A HMG .50 Sentry", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
-	// ["Mk30A HMG .50 Sentry", "O_HMG_01_A_F", 5000],
-	// ["Mk30A HMG .50 Sentry", "I_HMG_01_A_F", 5000],
+	["Mk30A HMG .50 Sentry", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
+	["Mk30A HMG .50 Sentry", "O_HMG_01_A_F", 5000],
+	["Mk30A HMG .50 Sentry", "I_HMG_01_A_F", 5000],
 	["Mk30 HMG .50 High tripod", "B_HMG_01_high_F", 3000],
 	["Mk30 HMG .50 High tripod", "O_HMG_01_high_F", 3000],
 	["Mk30 HMG .50 High tripod", "I_HMG_01_high_F", 3000],
 	["Mk32 GMG 20mm Low tripod", "B_GMG_01_F", 5000],
 	["Mk32 GMG 20mm Low tripod", "O_GMG_01_F", 5000],
 	["Mk32 GMG 20mm Low tripod", "I_GMG_01_F", 5000],
-	// ["Mk32A GMG 20mm Sentry", "B_GMG_01_A_F", 10000],
-	// ["Mk32A GMG 20mm Sentry", "O_GMG_01_A_F", 10000],
-	// ["Mk32A GMG 20mm Sentry", "I_GMG_01_A_F", 10000],
+	["Mk32A GMG 20mm Sentry", "B_GMG_01_A_F", 10000],
+	["Mk32A GMG 20mm Sentry", "O_GMG_01_A_F", 10000],
+	["Mk32A GMG 20mm Sentry", "I_GMG_01_A_F", 10000],
 	["Mk32 GMG 20mm High tripod", "B_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod", "O_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 6000],
@@ -291,9 +291,10 @@ accessoriesArray = compileFinal str
 	["AMS (Sand)", "optic_AMS_snd", 250, "item"],
 	["LRPS", "optic_LRPS", 300, "item"],
 	["NVS", "optic_NVS", 500, "item"],
-	["TWS", "optic_tws", 5000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
-	["TWS MG", "optic_tws_mg", 6000, "item", "HIDDEN"],
-	["Nightstalker", "optic_Nightstalker", 7500, "item", "HIDDEN"]
+	// To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
+	["TWS", "optic_tws", 5000, "item"],
+	["TWS MG", "optic_tws_mg", 6000, "item"],
+	["Nightstalker", "optic_Nightstalker", 7500, "item"]
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
@@ -710,27 +711,31 @@ landArray = compileFinal str
 [
 	// SKIPSAVE = will not be autosaved until first manual force save, good for cheap vehicles that usually get abandoned
 
-	["Kart", "C_Kart_01_F", 500, "vehicle", "SKIPSAVE"],
+	["Kart", "C_Kart_01_F", 500, "vehicle"],
 
-	["Quadbike (Civilian)", "C_Quadbike_01_F", 600, "vehicle", "SKIPSAVE"],
-	["Quadbike (NATO)", "B_Quadbike_01_F", 650, "vehicle", "SKIPSAVE"],
-	["Quadbike (CSAT)", "O_Quadbike_01_F", 650, "vehicle", "SKIPSAVE"],
-	["Quadbike (AAF)", "I_Quadbike_01_F", 650, "vehicle", "SKIPSAVE"],
-	["Quadbike (FIA)", "B_G_Quadbike_01_F", 650, "vehicle", "SKIPSAVE"],
+	["Quadbike (Civilian)", "C_Quadbike_01_F", 600, "vehicle"],
+	["Quadbike (NATO)", "B_Quadbike_01_F", 650, "vehicle"],
+	["Quadbike (CSAT)", "O_Quadbike_01_F", 650, "vehicle"],
+	["Quadbike (AAF)", "I_Quadbike_01_F", 650, "vehicle"],
+	["Quadbike (FIA)", "B_G_Quadbike_01_F", 650, "vehicle"],
 
-	["Hatchback", "C_Hatchback_01_F", 800, "vehicle", "SKIPSAVE"],
-	["Hatchback Sport", "C_Hatchback_01_sport_F", 1000, "vehicle", "SKIPSAVE"],
-	["SUV", "C_SUV_01_F", 1100, "vehicle", "SKIPSAVE"],
-	["Offroad", "C_Offroad_01_F", 1100, "vehicle", "SKIPSAVE"],
-	["Offroad Camo", "B_G_Offroad_01_F", 1250, "vehicle", "SKIPSAVE"],
-	["Offroad Repair", "C_Offroad_01_repair_F", 1500, "vehicle", "SKIPSAVE"],
-	["Offroad HMG", "B_G_Offroad_01_armed_F", 2500, "vehicle", "SKIPSAVE"],
+	["Hatchback", "C_Hatchback_01_F", 800, "vehicle"],
+	["Datsun 620 Pickup", "CUP_C_Datsun", 800, "vehicle"],
+	["Hatchback Sport", "C_Hatchback_01_sport_F", 1000, "vehicle"],
+	["SUV", "C_SUV_01_F", 1100, "vehicle"],
+	["Offroad", "C_Offroad_01_F", 1100, "vehicle"],
+	["Offroad Camo", "B_G_Offroad_01_F", 1250, "vehicle"],
+	["Offroad Repair", "C_Offroad_01_repair_F", 1500, "vehicle"],
+	["Offroad HMG", "B_G_Offroad_01_armed_F", 2500, "vehicle"],
+	["Land Rover HMG", "CUP_I_LR_MG_AAF", 2500, "vehicle"],
+	["UAZ (SPG-9)", "CUP_O_UAZ_SPG9_CHDKZ", 3500, "vehicle"],
+	["UAZ (9K115 Metis)", "CUP_O_UAZ_METIS_RU", 4000, "vehicle"],
 
-	["Truck", "C_Van_01_transport_F", 700, "vehicle", "SKIPSAVE"],
-	["Truck (Camo)", "B_G_Van_01_transport_F", 800, "vehicle", "SKIPSAVE"],
-	["Truck Box", "C_Van_01_box_F", 900, "vehicle", "SKIPSAVE"],
-	["Fuel Truck", "C_Van_01_fuel_F", 2000, "vehicle", "SKIPSAVE"],
-	["Fuel Truck (Camo)", "B_G_Van_01_fuel_F", 2100, "vehicle", "SKIPSAVE"],
+	["Truck", "C_Van_01_transport_F", 700, "vehicle"],
+	["Truck (Camo)", "B_G_Van_01_transport_F", 800, "vehicle"],
+	["Truck Box", "C_Van_01_box_F", 900, "vehicle"],
+	["Fuel Truck", "C_Van_01_fuel_F", 2000, "vehicle"],
+	["Fuel Truck (Camo)", "B_G_Van_01_fuel_F", 2100, "vehicle"],
 
 	["HEMTT Tractor", "B_Truck_01_mover_F", 4000, "vehicle"],
 	["HEMTT Resupply", "B_Truck_01_ammo_F", 5000, "vehicle"],
@@ -766,15 +771,23 @@ landArray = compileFinal str
 
 armoredArray = compileFinal str
 [
-	["Hunter", "B_MRAP_01_F", 4000, "vehicle", "SKIPSAVE"],
+	["GAZ Vodnik (2x PKM LMG)", "CUP_O_GAZ_Vodnik_PK_RU", 15000, "vehicle"],
+	["GAZ Vodnik (GMG + LMG)", "CUP_O_GAZ_Vodnik_AGS_RU", 17500, "vehicle"],
+	["GAZ Vodnik (30mm)", "CUP_O_GAZ_Vodnik_BPPU_RU", 23000, "vehicle"],
+	["Humvee M2 Browning", "CUP_B_HMMWV_M2_GPK_ACR", 16000, "vehicle"],
+	["Humvee DSHKM", "CUP_B_HMMWV_DSHKM_GPK_ACR", 16000, "vehicle"],
+	["Humvee GMG", "CUP_B_HMMWV_AGS_GPK_ACR", 17500, "vehicle"],
+	["Hunter", "B_MRAP_01_F", 4000, "vehicle"],
 	["Hunter HMG", "B_MRAP_01_hmg_F", 15000, "vehicle"],
 	["Hunter GMG", "B_MRAP_01_gmg_F", 17500, "vehicle"],
-	["Ifrit", "O_MRAP_02_F", 4000, "vehicle", "SKIPSAVE"],
+	["Armored SUV (Minigun)", "CUP_I_SUV_Armored_ION", 17500, "vehicle"],
+	["Ifrit", "O_MRAP_02_F", 4000, "vehicle"],
 	["Ifrit HMG", "O_MRAP_02_hmg_F", 15000, "vehicle"],
 	["Ifrit GMG", "O_MRAP_02_gmg_F", 17500, "vehicle"],
-	["Strider", "I_MRAP_03_F", 4000, "vehicle", "SKIPSAVE"],
+	["Strider", "I_MRAP_03_F", 4000, "vehicle"],
 	["Strider HMG", "I_MRAP_03_hmg_F", 15000, "vehicle"],
 	["Strider GMG", "I_MRAP_03_gmg_F", 17500, "vehicle"],
+	["BTR-60PB", "CUP_B_BTR60_CDF", 18500, "vehicle"],
 	["MSE-3 Marid", "O_APC_Wheeled_02_rcws_F", 22500, "vehicle"],
 	["AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F", 27500, "vehicle"],
 	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 30000, "vehicle"]
@@ -785,6 +798,8 @@ tanksArray = compileFinal str
 	["CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F", 32500, "vehicle"],
 	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 35000, "vehicle"],
 	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 37500, "vehicle"],
+	["BMP-3", "CUP_O_BMP3_RU", 37500, "vehicle"],
+	["T-34-85-M", "CUP_I_T34_NAPA", 37500, "vehicle"],
 	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 40000, "vehicle"],
 	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 40000, "vehicle"],
 	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 40000, "vehicle"],
@@ -840,22 +855,22 @@ planesArray = compileFinal str
 
 boatsArray = compileFinal str
 [
-	["Rescue Boat", "C_Rubberboat", 500, "boat", "SKIPSAVE"],
-	["Rescue Boat (NATO)", "B_Lifeboat", 500, "boat", "SKIPSAVE"],
-	["Rescue Boat (CSAT)", "O_Lifeboat", 500, "boat", "SKIPSAVE"],
-	["Assault Boat (NATO)", "B_Boat_Transport_01_F", 600, "boat", "SKIPSAVE"],
-	["Assault Boat (CSAT)", "O_Boat_Transport_01_F", 600, "boat", "SKIPSAVE"],
-	["Assault Boat (AAF)", "I_Boat_Transport_01_F", 600, "boat", "SKIPSAVE"],
-	["Assault Boat (FIA)", "B_G_Boat_Transport_01_F", 600, "boat", "SKIPSAVE"],
-	["Motorboat", "C_Boat_Civil_01_F", 1000, "boat", "SKIPSAVE"],
-	["Motorboat Rescue", "C_Boat_Civil_01_rescue_F", 900, "boat", "SKIPSAVE"],
-	["Motorboat Police", "C_Boat_Civil_01_police_F", 1100, "boat", "SKIPSAVE"],
-	["Speedboat HMG (CSAT)", "O_Boat_Armed_01_hmg_F", 4000, "boat", "SKIPSAVE"],
-	["Speedboat Minigun (NATO)", "B_Boat_Armed_01_minigun_F", 4000, "boat", "SKIPSAVE"],
-	["Speedboat Minigun (AAF)", "I_Boat_Armed_01_minigun_F", 4000, "boat", "SKIPSAVE"],
-	["SDV Submarine (NATO)", "B_SDV_01_F", 1000, "submarine", "SKIPSAVE"],
-	["SDV Submarine (CSAT)", "O_SDV_01_F", 1000, "submarine", "SKIPSAVE"],
-	["SDV Submarine (AAF)", "I_SDV_01_F", 1000, "submarine", "SKIPSAVE"]
+	["Rescue Boat", "C_Rubberboat", 500, "boat"],
+	["Rescue Boat (NATO)", "B_Lifeboat", 500, "boat"],
+	["Rescue Boat (CSAT)", "O_Lifeboat", 500, "boat"],
+	["Assault Boat (NATO)", "B_Boat_Transport_01_F", 600, "boat"],
+	["Assault Boat (CSAT)", "O_Boat_Transport_01_F", 600, "boat"],
+	["Assault Boat (AAF)", "I_Boat_Transport_01_F", 600, "boat"],
+	["Assault Boat (FIA)", "B_G_Boat_Transport_01_F", 600, "boat"],
+	["Motorboat", "C_Boat_Civil_01_F", 1000, "boat"],
+	["Motorboat Rescue", "C_Boat_Civil_01_rescue_F", 900, "boat"],
+	["Motorboat Police", "C_Boat_Civil_01_police_F", 1100, "boat"],
+	["Speedboat HMG (CSAT)", "O_Boat_Armed_01_hmg_F", 4000, "boat"],
+	["Speedboat Minigun (NATO)", "B_Boat_Armed_01_minigun_F", 4000, "boat"],
+	["Speedboat Minigun (AAF)", "I_Boat_Armed_01_minigun_F", 4000, "boat"],
+	["SDV Submarine (NATO)", "B_SDV_01_F", 1000, "submarine"],
+	["SDV Submarine (CSAT)", "O_SDV_01_F", 1000, "submarine"],
+	["SDV Submarine (AAF)", "I_SDV_01_F", 1000, "submarine"]
 ];
 
 allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray);

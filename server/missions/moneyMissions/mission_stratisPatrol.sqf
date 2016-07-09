@@ -1,8 +1,8 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: mission_altisPatrol.sqf
-//	@file Author: JoSchaap, AgentRev, LouD
+//	@file Name: mission_stratisPatrol.sqf
+//	@file Author: JoSchaap, AgentRev, LouD, Sporadisk
 
 if (!isServer) exitwith {};
 #include "moneyMissionDefines.sqf";
@@ -20,13 +20,16 @@ _setupObjects =
 	_town = (call cityList) call BIS_fnc_selectRandom;
 	_missionPos = markerPos (_town select 0);
 
-	_convoyVeh = ["I_MRAP_03_hmg_F","I_MBT_03_cannon_F","O_APC_Tracked_02_AA_F","I_MBT_03_cannon_F","I_MRAP_03_gmg_F"];
+	_convoyVeh = ["I_MRAP_03_hmg_F","I_MBT_03_cannon_F","O_APC_Tracked_02_AA_F", "I_MBT_03_cannon_F",
+		"I_MRAP_03_gmg_F", "CUP_O_BMP3_RU", "CUP_I_T34_NAPA", "CUP_I_SUV_Armored_ION",
+		"CUP_O_GAZ_Vodnik_BPPU_RU", "CUP_B_HMMWV_DSHKM_GPK_ACR", "CUP_O_GAZ_Vodnik_PK_RU", "CUP_I_LR_MG_AAF",
+		"CUP_O_UAZ_SPG9_CHDKZ", "CUP_O_UAZ_METIS_RU", "CUP_O_GAZ_Vodnik_AGS_RU", "CUP_O_BTR60_SLA"];
 	
-	_veh1 = _convoyVeh select 0;
-	_veh2 = _convoyVeh select 1;
-	_veh3 = _convoyVeh select 2;
-	_veh4 = _convoyVeh select 3;
-	_veh5 = _convoyVeh select 4;
+	_veh1 = _convoyVeh call BIS_fnc_selectRandom;
+	_veh2 = _convoyVeh call BIS_fnc_selectRandom;
+	_veh3 = _convoyVeh call BIS_fnc_selectRandom;
+	_veh4 = _convoyVeh call BIS_fnc_selectRandom;
+	_veh5 = _convoyVeh call BIS_fnc_selectRandom;
 
 	_createVehicle = {
 		private ["_type","_position","_direction","_vehicle","_soldier"];

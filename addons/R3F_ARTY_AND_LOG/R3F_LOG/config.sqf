@@ -5,16 +5,20 @@
  */
 R3F_LOG_CFG_remorqueurs =
 [
-	"SUV_01_base_F",
-	"Offroad_01_base_F",
-	"Offroad_02_base_F",
-	"Van_01_base_F",
+	"Boat_Armed_01_base_F",
+	"CUP_HMMWV_Base",
+	"CUP_LR_Base",
+	"CUP_SUV_Base",
+	"CUP_UAZ_Base",
 	"LSV_01_base_F",
 	"LSV_02_base_F",
 	"MRAP_01_base_F",
 	"MRAP_02_base_F",
 	"MRAP_03_base_F",
-	"Boat_Armed_01_base_F"
+	"Offroad_01_base_F",
+	"Offroad_02_base_F",
+	"SUV_01_base_F",
+	"Van_01_base_F"
 ];
 
 /**
@@ -25,6 +29,7 @@ R3F_LOG_CFG_remorqueursH =
 	"Truck_01_base_F",
 	"Truck_02_base_F",
 	"Truck_03_base_F",
+	"CUP_Ural_BaseTurret",
 	"Wheeled_APC_F",
 	"Tank_F"
 ];
@@ -53,6 +58,7 @@ R3F_LOG_CFG_objets_remorquablesH =
 [
 	"Wheeled_APC_F",
 	"Tank_F",
+	"Truck_F",
 	"Heli_Attack_02_base_F",
 	"Heli_Transport_01_base_F",
 	"Heli_Transport_02_base_F",
@@ -113,6 +119,7 @@ R3F_LOG_CFG_objets_heliportablesH =
 [
 	"Wheeled_APC_F",
 	"Tank_F",
+	"Truck_F",
 	"Heli_Light_02_base_F",
 	"Heli_light_03_base_F",
 	"Heli_Attack_01_base_F",
@@ -140,39 +147,45 @@ R3F_LOG_CFG_objets_heliportables append R3F_LOG_CFG_objets_heliportablesH;
  */
 R3F_LOG_CFG_transporteurs =
 [
+	["Plane_Civil_01_base_F", 5],
 	["Quadbike_01_base_F", 5],
-	["UGV_01_base_F", 10],
+	["Scooter_Transport_01_base_F", 5],
+	["Boat_Civil_01_base_F", 10],
 	["Hatchback_01_base_F", 10],
-	["SUV_01_base_F", 20],
-	["Offroad_01_base_F", 30],
-	["Offroad_02_base_F", 20],
-	["Van_01_base_F", 40],
+	["Heli_Attack_01_base_F", 10],
+	["Heli_Light_01_base_F", 10],
+	["Rubber_duck_base_F", 10],
+	["UGV_01_base_F", 10],
 	["LSV_01_base_F", 15],
+	["Boat_Transport_02_base_F", 15],
+	["CUP_Datsun_Base", 15], // Datsun 620 Pickup
+	["CUP_LR_Base", 15], // Land Rover
+	["CUP_UAZ_Base", 15],  // UAZ Pickup
 	["LSV_02_base_F", 15],
+	["Boat_Armed_01_base_F", 20],
+	["CUP_HMMWV_Base", 20],
+	["CUP_SUV_Base", 20],
+	["Heli_Attack_02_base_F", 20],
+	["Heli_Light_02_base_F", 20],
+	["Heli_light_03_base_F", 20],
 	["MRAP_01_base_F", 20],
 	["MRAP_02_base_F", 20],
 	["MRAP_03_base_F", 20],
-	["B_Truck_01_box_F", 150],
-	["Truck_F", 75],
-	["Wheeled_APC_F", 30],
-	["Tank_F", 30],
-	["Scooter_Transport_01_base_F", 5],
-	["Rubber_duck_base_F", 10],
-	["Boat_Civil_01_base_F", 10],
-	["Boat_Transport_02_base_F", 15],
-	["Boat_Armed_01_base_F", 20],
-	["Heli_Light_01_base_F", 10],
-	["Heli_Light_02_base_F", 20],
-	["Heli_light_03_base_F", 20],
+	["Offroad_02_base_F", 20],
+	["SUV_01_base_F", 20],
 	["Heli_Transport_01_base_F", 25],
+	["CUP_GAZ_Vodnik_Base", 30],
 	["Heli_Transport_02_base_F", 30],
 	["Heli_Transport_03_base_F", 30],
 	["Heli_Transport_04_base_F", 30],
-	["Heli_Attack_01_base_F", 10],
-	["Heli_Attack_02_base_F", 20],
-	["Plane_Civil_01_base_F", 5],
+	["Offroad_01_base_F", 30],
+	["Tank_F", 30],
+	["VTOL_02_base_F", 30],
+	["Wheeled_APC_F", 30],
+	["Van_01_base_F", 40],
 	["VTOL_01_base_F", 50],
-	["VTOL_02_base_F", 30]
+	["Truck_F", 75],
+	["B_Truck_01_box_F", 150]
 ];
 
 
