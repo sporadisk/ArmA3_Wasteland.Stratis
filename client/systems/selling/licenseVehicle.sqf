@@ -65,7 +65,17 @@ _objName = getText (configFile >> "CfgVehicles" >> _objClass >> "displayName");
 		{	
 		  	_vehicle setVariable ["A3W_missionVehicle", true, true];	
 			_vehicle setVariable ["ownerN", name player, true];
-			_vehicle setVariable ["ownerUID", getPlayerUID player, true];		
+			_vehicle setVariable ["ownerUID", getPlayerUID player, true];
+
+			if(_vehicle getVariable ["A3W_skipAutoSave", false]) then // auto-save is disabled for this vehicle
+			{
+				_vehicle setVariable ["A3W_skipAutoSave", nil, true]; // re-enable autosave
+			};
+
+			if (!isNil "fn_manualVehicleSave") then
+			{
+				_vehicle call fn_manualVehicleSave;
+			};
 		  
 			player setVariable["cmoney",(player getVariable "cmoney")-_price,true];
 			[format ['Congratulations! You are now the proud owner of a %1', _objname, VEHICLE_MAX_SELLING_DISTANCE], "THANK YOU"] call  BIS_fnc_guiMessage;
