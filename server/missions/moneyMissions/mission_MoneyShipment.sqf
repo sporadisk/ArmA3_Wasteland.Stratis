@@ -22,7 +22,34 @@ _setupVars =
 	// Choices per vehicle : Min = 1, Max = infinite
 	_MoneyShipment =
 	[
+		// Trivial
+		// Never more than one armed vehicle
+		[
+			"Tiny Money Shipment", // Marker text
+			12500, // Money
+			[
+				[ // NATO convoy
+					["B_MRAP_01_hmg_F", "CUP_I_LR_MG_AAF", "CUP_B_HMMWV_M2_GPK_ACR",
+						"CUP_B_HMMWV_DSHKM_GPK_ACR", "CUP_B_HMMWV_AGS_GPK_ACR"], // Veh 1
+					["C_Hatchback_01_F", "C_SUV_01_F", "B_Quadbike_01_F", "B_G_Van_01_transport_F",
+						"CUP_C_Datsun", "C_Hatchback_01_sport_F"] // Veh 2
+				],
+				[ // CSAT convoy
+					["O_MRAP_02_hmg_F", "CUP_O_UAZ_SPG9_RU", "CUP_O_GAZ_Vodnik_PK_RU",
+						"CUP_O_GAZ_Vodnik_AGS_RU"], // Veh 1
+					["C_Hatchback_01_F", "C_SUV_01_F", "B_Quadbike_01_F", "B_G_Van_01_transport_F",
+						"CUP_C_Datsun", "C_Hatchback_01_sport_F"] // Veh 2
+				],
+				[ // AAF convoy
+					["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F", "CUP_I_SUV_Armored_ION", "CUP_I_LR_MG_AAF",
+						"CUP_C_Datsun"], // Veh 1
+					["C_Hatchback_01_F", "C_SUV_01_F", "B_Quadbike_01_F", "B_G_Van_01_transport_F",
+						"CUP_C_Datsun", "C_Hatchback_01_sport_F"] // Veh 2
+				]
+			]
+		],
 		// Easy
+		// Usually two light armed vehicles
 		[
 			"Small Money Shipment", // Marker text
 			25000, // Money
@@ -48,6 +75,7 @@ _setupVars =
 			]
 		],
 		// Medium
+		// One APC accompanied by two light armed vehicles
 		[
 			"Medium Money Shipment", // Marker text
 			50000, // Money
@@ -77,6 +105,7 @@ _setupVars =
 			]
 		],
 		// Hard
+		// One MBT accompanied by two APCs
 		[
 			"Large Money Shipment", // Marker text
 			75000, // Money
@@ -101,6 +130,7 @@ _setupVars =
 			]
 		],
 		// Extreme
+		// Four armored vehicles.
 		[
 			"Heavy Money Shipment", // Marker text
 			100000, // Money
