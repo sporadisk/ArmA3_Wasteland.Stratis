@@ -113,47 +113,60 @@ _setupVars =
 			75000, // Money
 			[
 				[ // NATO convoy
-					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F"], // Veh 1
+					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F",
+						"CUP_B_BTR60_CDF"], // Veh 1
 					["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 2
-					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F"] // Veh 3
+					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F",
+						"CUP_B_BTR60_CDF"] // Veh 3
 				],
 				[ // CSAT convoy
 					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F",
-						"CUP_O_BMP3_RU"], // Veh 1
+						"CUP_O_BMP3_RU", "CUP_O_BTR60_SLA"], // Veh 1
 					["O_MBT_02_cannon_F"], // Veh 2
 					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F",
-						"CUP_O_BMP3_RU"] // Veh 3
+						"CUP_O_BMP3_RU", "CUP_O_BTR60_SLA"] // Veh 3
 				],
 				[ // AAF convoy
-					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "CUP_I_T34_NAPA"], // Veh 1
+					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "CUP_I_T34_NAPA",
+						"CUP_I_BTR60_UN", "CUP_I_SUV_Armored_ION"], // Veh 1
 					["I_MBT_03_cannon_F"], // Veh 2
-					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "CUP_I_T34_NAPA"] // Veh 3
+					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "CUP_I_T34_NAPA",
+						"CUP_I_BTR60_UN", "CUP_I_SUV_Armored_ION"] // Veh 3
 				]
 			]
 		],
 		// Extreme
-		// Four armored vehicles.
+		// Four armored vehicles, with at least one MBT
 		[
 			"Heavy Money Shipment", // Marker text
 			100000, // Money
 			[
 				[ // NATO convoy
-					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 1
+					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F",
+						"B_MBT_01_cannon_F", "B_MBT_01_TUSK_F", "CUP_B_BTR60_CDF"], // Veh 1
 					["B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 2
-					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 3
-					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"] // Veh 4
+					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F",
+						"B_MBT_01_cannon_F", "B_MBT_01_TUSK_F", "CUP_B_BTR60_CDF"], // Veh 3
+					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F",
+						"B_MBT_01_cannon_F", "B_MBT_01_TUSK_F", "CUP_B_BTR60_CDF"] // Veh 4
 				],
 				[ // CSAT convoy
-					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F", "O_MBT_02_cannon_F"], // Veh 1
+					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F",
+						"O_MBT_02_cannon_F", "CUP_O_BTR60_SLA"], // Veh 1
 					["O_APC_Tracked_02_AA_F", "O_MBT_02_cannon_F"], // Veh 2
-					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F", "O_MBT_02_cannon_F"], // Veh 3
-					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F", "O_MBT_02_cannon_F"] // Veh 4
+					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F",
+						"O_MBT_02_cannon_F", "CUP_O_BTR60_SLA"], // Veh 3
+					["O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F", "O_APC_Tracked_02_AA_F",
+						"O_MBT_02_cannon_F", "CUP_O_BTR60_SLA"] // Veh 4
 				],
 				[ // AAF convoy
-					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F"], // Veh 1
+					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F",
+						"CUP_I_T34_NAPA", "CUP_I_BTR60_UN", "CUP_I_SUV_Armored_ION"], // Veh 1
 					["I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F"], // Veh 2
-					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F"], // Veh 3
-					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F"] // Veh 4
+					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F",
+						"CUP_I_T34_NAPA", "CUP_I_BTR60_UN", "CUP_I_SUV_Armored_ION"], // Veh 3
+					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F",
+						"CUP_I_T34_NAPA", "CUP_I_BTR60_UN", "CUP_I_SUV_Armored_ION"] // Veh 4
 				]
 			]
 		]
