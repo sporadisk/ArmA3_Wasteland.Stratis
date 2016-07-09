@@ -26,6 +26,9 @@ _unitTypes =
 	"C_man_p_fugitive_F"
 ];
 
+_launcherAmmo = ["CUP_OG7_M", "CUP_PG7V_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_TBG7V_M"];
+_launcherOptics = ["CUP_optic_PGO7V2", "CUP_optic_NSPU_RPG", "CUP_optic_PGO7V", "CUP_optic_PGO7V3"];
+
 for "_i" from 1 to _nbUnits do
 {
 	_uPos = _pos vectorAdd ([[random _radius, 0, 0], random 360] call BIS_fnc_rotateVector2D);
@@ -36,7 +39,15 @@ for "_i" from 1 to _nbUnits do
 	removeAllAssignedItems _unit;
 	removeVest _unit;
 	removeBackpack _unit;
-	_unit addVest "V_HarnessOSpec_gry";
+
+	if ((floor random 100) <= 10) then {
+		// 10 percent chance of fancy suit
+		_unit forceAddUniform "CUP_U_C_Suit_01";
+		_unit addVest "V_Chestrig_blk";
+	} else {
+		_unit addVest "V_HarnessOSpec_gry";
+	};
+
 	_unit addMagazine "30Rnd_556x45_Stanag";
 	_unit addMagazine "30Rnd_556x45_Stanag";
 	_unit addMagazine "30Rnd_556x45_Stanag";
@@ -56,10 +67,11 @@ for "_i" from 1 to _nbUnits do
 		{
 			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addWeapon "arifle_TRG20_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_Titan_short_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addWeapon "CUP_launch_RPG7V";
+			_unit addSecondaryWeaponItem (_launcherOptics call BIS_fnc_selectRandom);
+			for "_j" from 1 to 3 do { // add 3 RPG-7 rockets
+				_unit addMagazine (_launcherAmmo call BIS_fnc_selectRandom);
+			};
 		};
 		// Rifleman
 		default
