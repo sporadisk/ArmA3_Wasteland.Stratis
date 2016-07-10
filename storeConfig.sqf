@@ -106,6 +106,7 @@ lmgArray = compileFinal str
 
 launcherArray = compileFinal str
 [
+	["RPG-7", "CUP_launch_RPG7V", 250],
 	["RPG-42 Alamut", "launch_RPG32_F", 400],
 	["PCML", "launch_NLAW_F", 600],
 	["Titan MPRL Compact (Sand)", "launch_Titan_short_F", 500],
@@ -210,6 +211,11 @@ ammoArray = compileFinal str
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
+	["RPG-7 OG-7M Fragmentation", "CUP_OG7_M", 68],
+	["RPG-7 PG-7VM HEAT", "CUP_PG7V_M", 98],
+	["RPG-7 PG-7VLM HEAT", "CUP_PG7VL_M", 132],
+	["RPG-7 PG-7VRM Tandem HEAT", "CUP_PG7VR_M", 250],
+	["RPG-7 TBG-7V Thermobaric", "CUP_TBG7V_M", 250],
 	["RPG-42 Anti-Tank Rocket", "RPG32_F", 250],              // Direct damage: high      | Splash damage: low    | Guidance: none
 	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 250],      // Direct damage: medium    | Splash damage: medium | Guidance: none
 	["PCML Anti-Tank Missile", "NLAW_F", 400],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
@@ -290,6 +296,10 @@ accessoriesArray = compileFinal str
 	["AMS (Khaki)", "optic_AMS_khk", 250, "item"],
 	["AMS (Sand)", "optic_AMS_snd", 250, "item"],
 	["LRPS", "optic_LRPS", 300, "item"],
+	["RPG-7 PG-7V scope", "CUP_optic_PGO7V", 120, "item"],
+	["RPG-7 PG-7V2 scope", "CUP_optic_PGO7V2", 170, "item"],
+	["RPG-7 PG-7V3 scope", "CUP_optic_PGO7V3", 200, "item"],
+	["RPG-7 NVS", "CUP_optic_NSPU_RPG", 350, "item"],
 	["NVS", "optic_NVS", 500, "item"],
 	// To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["TWS", "optic_tws", 5000, "item"],
