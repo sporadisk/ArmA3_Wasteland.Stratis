@@ -17,6 +17,25 @@ if (isNil "_killer" || {isNull _killer}) then { _killer = _presumedKiller };
 _killer = effectiveCommander _killer;
 _deathCause = _player getVariable ["A3W_deathCause_local", []];
 
+// Death marker!
+// Copied from this changeset:
+// https://github.com/NRZ7/DSR_A3Wasteland_1.3b.Stratis/commit/eaca6675814ae11b40539883e72300cda8f9b96f
+createBodyMarker = {
+	deleteMarkerLocal "deadMarker";
+	_pos = getPos (vehicle player);
+	_dMarker = createMarkerLocal ["deadMarker", _pos];
+	_dMarker setMarkerShapeLocal "ICON";
+	_dMarker setMarkerAlphaLocal 1;
+	_dMarker setMarkerPosLocal _pos;
+	_dMarker setMarkerTextLocal "R.I.P.";
+	_dMarker setMarkerColorLocal "ColorBlue";
+	_dMarker setMarkerTypeLocal "waypoint";
+	_dMarker setMarkerSizeLocal [0.6,0.6];
+	sleep 600;
+	deleteMarkerLocal _dMarker;
+};
+[] spawn createBodyMarker;
+
 if (_killer == _player) then
 {
 	if (_deathCause isEqualTo []) then
