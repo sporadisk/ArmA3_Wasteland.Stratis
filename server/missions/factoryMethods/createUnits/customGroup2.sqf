@@ -67,9 +67,10 @@ for "_i" from 1 to _nbUnits do
 		{
 			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addWeapon "arifle_TRG20_F";
+			_unit addMagazine (_launcherAmmo call BIS_fnc_selectRandom);
 			_unit addWeapon "CUP_launch_RPG7V";
 			_unit addSecondaryWeaponItem (_launcherOptics call BIS_fnc_selectRandom);
-			for "_j" from 1 to 3 do { // add 3 RPG-7 rockets
+			for "_j" from 1 to 2 do { // add 3 RPG-7 rockets
 				_unit addMagazine (_launcherAmmo call BIS_fnc_selectRandom);
 			};
 		};
